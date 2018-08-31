@@ -1,0 +1,60 @@
+server:
+  port: 8080
+
+spring:
+    mvc:
+        view:
+          prefix: /WEB-INF/view/
+          suffix: .jsp
+    datasource:
+        name: test
+        url: jdbc:mysql://127.0.0.1:3306/wulian
+        username: root
+        password: sa
+        # 使用druid数据源
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+    # redis配置
+    redis:
+      database: 0
+      host: 192.168.199.188
+      port: 6379
+      password: Betelinfo123456
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+      timeout: 0
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+  config-location: classpath:conf/mybatis-config.xml
+  check-config-location: true
+   
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+# 日志配置
+logging:
+  level: debug
+  file: logs/property-manage-logging.log
+  pattern:
+    console: '%d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n'
+    file: '%d{yyyy/MM/dd-HH:mm} [%thread] %-5level %logger- %msg%n'
+

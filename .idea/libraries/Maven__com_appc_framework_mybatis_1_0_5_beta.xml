@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.appc:framework-mybatis:1.0.5-beta">
+    <CLASSES>
+      <root url="jar://C:/Program Files/apache-maven-3.0.5/nexus/nexus/com/appc/framework-mybatis/1.0.5-beta/framework-mybatis-1.0.5-beta.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Program Files/apache-maven-3.0.5/nexus/nexus/com/appc/framework-mybatis/1.0.5-beta/framework-mybatis-1.0.5-beta-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://C:/Program Files/apache-maven-3.0.5/nexus/nexus/com/appc/framework-mybatis/1.0.5-beta/framework-mybatis-1.0.5-beta-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
